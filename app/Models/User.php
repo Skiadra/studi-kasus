@@ -65,4 +65,9 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function division()
+    {
+        return $this->belongsTo(Division::class);
+    }
 }
