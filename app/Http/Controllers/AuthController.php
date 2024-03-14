@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+use function Pest\Laravel\withCookie;
+
 class AuthController extends Controller
 {
     /**

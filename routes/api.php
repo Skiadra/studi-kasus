@@ -24,5 +24,8 @@ Route::group([
     'prefix' => 'div'
 
 ], function ($router) {
-    Route::post('create', [DivisionController::class, 'createDivision']);
+    Route::post('create', [DivisionController::class, 'createDivision'])->middleware('auth:api');
+    Route::get('/', [DivisionController::class, 'getAllDivisions']);
+    Route::put('/{id}', [DivisionController::class, 'updateDivision'])->middleware('auth:api');
+    Route::delete('/{id}', [DivisionController::class, 'deleteDivision'])->middleware('auth:api');
 });
