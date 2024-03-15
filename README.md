@@ -8,27 +8,34 @@
 </p>
 
 ## Request JSON
-
 - Register
+```json
 {
     "name" : "Test",
     "email" : "test@example.com",
     "password" : "test",
     "division_id" : 4
 }
+```
 
 - Login
+```json
 {
     "email" : "test@example.com",
     "password" : "test"
 }
+```
 
 - Create Division
+```json
 {
     "nama_divisi" : "test1"
 }
+```
 
 - Update Division
+```json
 {
     "nama_divisi" : "test1"
 }
+```
